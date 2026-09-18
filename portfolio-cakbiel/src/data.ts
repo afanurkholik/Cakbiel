@@ -1,5 +1,68 @@
 // src/data.ts
+export interface Project {
+  title: string;
+  category: string;
+  description: string;
+  year: string;
+  role: string;
+  tools: string[];
+  metrics?: { label: string; value: string }[];
+  achievements?: string[];
+  image: string;
+  slug: string;
+}
 
+export interface Experience {
+  title: string;
+  company: string;
+  period: string;
+  type: string;
+  description: string;
+  achievements?: string[];
+}
+
+export interface Education {
+  institution: string;
+  degree: string;
+  period: string;
+  details: string;
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  date: string;
+  credentialID?: string;
+  details?: string;
+}
+
+export interface Award {
+  title: string;
+  medal: string;
+  location: string;
+  date: string;
+  role: string;
+}
+
+export interface OrganizationalExperience {
+  role: string;
+  organization: string;
+  period: string;
+  description: string;
+  achievement?: string;
+}
+
+export interface NavItem {
+  name: string;
+  slug: string;
+}
+
+export interface SkillCategory {
+  creative: string[];
+  technical: string[];
+  strategy: string[];
+  soft: string[];
+}
 export const profile = {
   name: "Rahmad Maulada Nabila",
   nickname: "Cak Biel",
