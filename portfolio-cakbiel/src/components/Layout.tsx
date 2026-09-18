@@ -1,4 +1,3 @@
-// src/components/Layout.tsx
 import { ReactNode, useState, useEffect } from "react";
 import Head from "next/head";
 import Navigation from "./Navigation";
@@ -15,10 +14,8 @@ export default function Layout({ children, title, description }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check localStorage or system preference
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
     if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
       setIsDark(true);
       document.documentElement.classList.add("dark");
@@ -26,8 +23,9 @@ export default function Layout({ children, title, description }: LayoutProps) {
   }, []);
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (!isDark) {
+    const next = !isDark;
+    setIsDark(next);
+    if (next) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
@@ -36,7 +34,7 @@ export default function Layout({ children, title, description }: LayoutProps) {
     }
   };
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => setIsMenuOpen((v) => !v);
 
   return (
     <>
@@ -44,20 +42,16 @@ export default function Layout({ children, title, description }: LayoutProps) {
         <title>{title ? `${title} | ${profile.name}` : profile.name}</title>
         <meta name="description" content={description || profile.summary} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="min-h-screen relative">
-        <Navigation 
-          isMenuOpen={isMenuOpen} 
-          toggleMenu={toggleMenu} 
+        <Navigation
+          isMenuOpen={isMenuOpen}
+          toggleMenu={toggleMenu}
           isDark={isDark}
           toggleTheme={toggleTheme}
         />
-        
-        <main className="transition-all duration-300">
-          {children}
-        </main>
+        <main>{children}</main>
       </div>
     </>
   );
