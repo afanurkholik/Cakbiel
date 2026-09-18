@@ -31,7 +31,7 @@ export default function SpecialtyPage() {
           <div className="mt-20">
             <h2 className="text-3xl font-bold mb-8">Sertifikasi</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              {certifications.map((cert, index) => (
+              {BadgeCheck.map((cert, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
