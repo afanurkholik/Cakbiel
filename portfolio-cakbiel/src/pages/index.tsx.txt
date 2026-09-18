@@ -1,0 +1,25 @@
+// src/pages/index.tsx
+import Layout from "@/components/Layout";
+import Hero from "@/components/Hero";
+import SelectedWork from "@/components/SelectedWork";
+import Specialty from "@/components/Specialty";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import CVDownload from "@/components/CVDownload";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <Layout title="Beranda" description="Portfolio Rahmad Maulada Nabila - Desainer Grafis & Koordinator Multimedia">
+      <Hero />
+      <SelectedWork />
+      <Specialty />
+      <About />
+      <Experience />
+      <CVDownload />
+      <Contact />
+      <Footer />
+    </Layout>
+  );
+}

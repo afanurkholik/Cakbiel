@@ -1,0 +1,63 @@
+// src/components/SelectedWork.tsx
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { projects } from "@/data";
+import ProjectCard from "./ProjectCard";
+
+export default function SelectedWork() {
+  return (
+    <section className="py-20 lg:py-32 px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-sm font-medium text-primary-600 mb-2">PORTFOLIO</h2>
+          <h3 className="text-4xl lg:text-5xl font-display font-bold mb-4">
+            Proyek Pilihan
+          </h3>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+            Seleksi proyek yang telah saya kerjakan selama bertahun-tahun, 
+            mencakup branding, edukasi, dan kompetisi internasional.
+          </p>
+        </motion.div>
+
+        {/* Projects Grid - Asymmetric Layout */}
+        <div className="grid lg:grid-cols-2 gap-8">
+          {projects.slice(0, 4).map((project, index) => (
+            <motion.div
+              key={project.slug}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className={index === 0 ? "lg:col-span-2" : ""}
+            >
+              <ProjectCard project={project} featured={index === 0} />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* View All Link */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <Link
+            href="/work"
+            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium transition-colors"
+          >
+            Lihat Semua Proyek
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
