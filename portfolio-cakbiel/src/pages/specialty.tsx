@@ -1,9 +1,8 @@
-// src/pages/specialty.tsx
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Footer from "@/components/Footer";
 import Specialty from "@/components/Specialty";
-import { skills, certifications, awards } from "@/data";
+import { certifications, awards } from "@/data";
 import { Award, BadgeCheck } from "lucide-react";
 
 export default function SpecialtyPage() {
@@ -20,14 +19,14 @@ export default function SpecialtyPage() {
               Keahlian & Sertifikasi
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
-              Kompetensi profesional dan pengakuan atas pencapaian di bidang 
+              Kompetensi profesional dan pengakuan atas pencapaian di bidang
               desain grafis dan multimedia.
             </p>
           </motion.div>
 
           <Specialty />
 
-          {/* Certifications */}
+          {/* Sertifikasi */}
           <div className="mt-20">
             <h2 className="text-3xl font-bold mb-8">Sertifikasi</h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -39,7 +38,7 @@ export default function SpecialtyPage() {
                   viewport={{ once: true }}
                   className="bg-gray-50 dark:bg-dark-800 rounded-2xl p-6"
                 >
-                  <Certificate className="w-8 h-8 text-primary-600 mb-4" />
+                  <BadgeCheck className="w-8 h-8 text-primary-600 mb-4" />
                   <h3 className="text-xl font-bold mb-2">{cert.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-2">{cert.issuer}</p>
                   <p className="text-sm text-gray-500">{cert.date}</p>
@@ -51,7 +50,7 @@ export default function SpecialtyPage() {
             </div>
           </div>
 
-          {/* Awards */}
+          {/* Penghargaan */}
           <div className="mt-20">
             <h2 className="text-3xl font-bold mb-8">Penghargaan & Prestasi</h2>
             <div className="space-y-4">
@@ -64,18 +63,26 @@ export default function SpecialtyPage() {
                   transition={{ delay: index * 0.05 }}
                   className="flex items-center gap-4 bg-gray-50 dark:bg-dark-800 rounded-xl p-6"
                 >
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 ${
-                    award.medal === "Gold" ? "bg-yellow-100 dark:bg-yellow-900/30" :
-                    award.medal === "Silver" ? "bg-gray-200 dark:bg-gray-700" :
-                    "bg-orange-100 dark:bg-orange-900/30"
-                  }`}>
-                    <Award className={`w-8 h-8 ${
-                      award.medal === "Gold" ? "text-yellow-600" :
-                      award.medal === "Silver" ? "text-gray-600" :
-                      "text-orange-600"
-                    }`} />
+                  <div
+                    className={`w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 ${
+                      award.medal === "Gold"
+                        ? "bg-yellow-100 dark:bg-yellow-900/30"
+                        : award.medal === "Silver"
+                        ? "bg-gray-200 dark:bg-gray-700"
+                        : "bg-orange-100 dark:bg-orange-900/30"
+                    }`}
+                  >
+                    <Award
+                      className={`w-8 h-8 ${
+                        award.medal === "Gold"
+                          ? "text-yellow-600"
+                          : award.medal === "Silver"
+                          ? "text-gray-600"
+                          : "text-orange-600"
+                      }`}
+                    />
                   </div>
-                  
+
                   <div className="flex-1">
                     <h3 className="font-bold mb-1">{award.title}</h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
