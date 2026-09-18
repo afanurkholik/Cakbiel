@@ -1,13 +1,15 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   typescript: {
-    ignoreBuildErrors: true,   // ← tambahkan ini
+    ignoreBuildErrors: true,
   },
   eslint: {
-    ignoreDuringBuilds: true,  // ← tambahkan ini
+    ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['placehold.co'],
+    domains: ["placehold.co"],
   },
-}
-module.exports = nextConfig
+};
+
+module.exports = nextConfig;
