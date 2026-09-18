@@ -1,23 +1,6 @@
 import type { AppProps } from "next/app";
-import { Space_Grotesk, Inter } from "next/font/google";
 import "@/style/globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <div className={`${spaceGrotesk.variable} ${inter.variable} font-body`}>
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
