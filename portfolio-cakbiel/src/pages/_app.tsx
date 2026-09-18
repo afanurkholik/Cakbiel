@@ -1,7 +1,7 @@
 // src/pages/_app.tsx
 import type { AppProps } from "next/app";
 import { Space_Grotesk, Inter } from "next/font/google";
-import "@/styles/globals.css";
+import "@/style/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
