@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import Footer from "@/components/Footer";
 import Specialty from "@/components/Specialty";
 import { skills, certifications, awards } from "@/data";
-import { Award, Certificate } from "lucide-react";
+import { Award, BadgeCheck } from "lucide-react";
 
 export default function SpecialtyPage() {
   return (
