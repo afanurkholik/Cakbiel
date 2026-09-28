@@ -18,14 +18,13 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           featured ? "aspect-video" : "aspect-[4/3]"
         }`}
       >
-        {/* Image Placeholder */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-dark-700 dark:to-dark-600">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-gray-400 dark:text-gray-600 text-sm">
-              {project.image}
-            </span>
-          </div>
-        </div>
+       {/* Project Image */}
+<img 
+  src={project.image} 
+  alt={project.title}
+  loading="lazy"
+  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+/>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
