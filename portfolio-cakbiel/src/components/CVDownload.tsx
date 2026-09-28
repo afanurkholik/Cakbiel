@@ -25,7 +25,7 @@ export default function CVDownload() {
           </p>
 
           <a
-            href="/assets/documents/cv.pdf"
+            href="/assets/documents/Rahmad_Maulada_CV.pdf"
             download
             className="inline-flex items-center gap-3 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-all hover:scale-105"
           >
