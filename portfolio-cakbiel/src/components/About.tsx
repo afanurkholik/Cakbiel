@@ -17,17 +17,12 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/40 dark:to-primary-800/40">
               {/* Placeholder for About Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-white/50 dark:bg-dark-800/50 flex items-center justify-center">
-                    <span className="text-5xl">🎓</span>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    [Foto About]<br />
-                    Ukuran: 600x750px
-                  </p>
-                </div>
-              </div>
+              <img 
+  src="/assets/images/about/about-photo.jpg" 
+  alt="Rahmad Maulada Nabila - Tentang Saya"
+  loading="lazy"
+  className="w-full h-full object-cover"
+/>
             </div>
             
             {/* Floating Badge */}
