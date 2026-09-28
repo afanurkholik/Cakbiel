@@ -17,7 +17,7 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           featured ? "aspect-video" : "aspect-[4/3]"
         }`}
       >
-        {/* LAYER 1: Foto proyek (paling belakang) */}
+        {/* LAYER 1: Foto proyek */}
         <img
           src={project.image}
           alt={project.title}
@@ -25,17 +25,15 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           className="absolute inset-0 z-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
 
-        {/* LAYER 2: Gradient gelap PERMANEN agar teks selalu terbaca */}
+        {/* LAYER 2: Gradient gelap PERMANEN (tidak perlu hover) */}
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/70 to-transparent pointer-events-none" />
 
-        {/* LAYER 3: Konten teks (paling depan) */}
+        {/* LAYER 3: Konten teks */}
         <div className="absolute inset-x-0 bottom-0 z-20 p-6 lg:p-8 flex flex-col justify-end">
-          {/* Category */}
           <span className="text-primary-400 text-sm font-medium mb-2 tracking-wide uppercase">
             {project.category}
           </span>
 
-          {/* Title */}
           <h3
             className={`font-display font-bold text-white mb-2 drop-shadow-lg ${
               featured ? "text-3xl lg:text-4xl" : "text-xl lg:text-2xl"
@@ -44,12 +42,10 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
             {project.title}
           </h3>
 
-          {/* Description */}
           <p className="text-gray-200 text-sm mb-4 line-clamp-2 drop-shadow">
             {project.description}
           </p>
 
-          {/* Meta Info */}
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-300">
               <span>{project.year}</span>
@@ -65,7 +61,6 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
             </motion.div>
           </div>
 
-          {/* Metrics */}
           {project.metrics && (
             <div className="flex flex-wrap gap-3 mt-4">
               {project.metrics.slice(0, 3).map((metric, idx) => (
