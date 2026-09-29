@@ -1,23 +1,31 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Award } from "lucide-react";
+import { ArrowUpRight, Award, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { Project } from "@/data";
 
 interface ProjectCardProps {
-  project: Project;
+  project: Project & { externalLink?: string };
   featured?: boolean;
 }
 
 export default function ProjectCard({ project, featured = false }: ProjectCardProps) {
+  const hasExternal = !!project.externalLink;
+
+  // Wrapper dinamis: eksternal → <a>, internal → <Link>
+  const Wrapper: any = hasExternal ? "a" : Link;
+  const wrapperProps = hasExternal
+    ? { href: project.externalLink!, target: "_blank", rel: "noopener noreferrer" }
+    : { href: `/work#${project.slug}` };
+
   return (
-    <Link href={`/work#${project.slug}`}>
+    <Wrapper {...wrapperProps}>
       <motion.div
         whileHover={{ y: -5 }}
         className={`group relative bg-gray-50 dark:bg-dark-800 rounded-3xl overflow-hidden ${
           featured ? "aspect-video" : "aspect-[4/3]"
         }`}
       >
-        {/* LAYER 1: Foto proyek */}
+        {/* LAYER 1: Foto */}
         <img
           src={project.image}
           alt={project.title}
@@ -25,10 +33,17 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           className="absolute inset-0 z-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
 
-        {/* LAYER 2: Gradient gelap PERMANEN (tidak perlu hover) */}
+        {/* LAYER 2: Gradient permanen */}
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/70 to-transparent pointer-events-none" />
 
-        {/* LAYER 3: Konten teks */}
+        {/* Badge sumber (jika eksternal) */}
+        {hasExternal && (
+          <span className="absolute top-4 right-4 z-30 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/15 backdrop-blur-sm text-[10px] font-semibold uppercase tracking-wider text-white ring-1 ring-white/20">
+            <ExternalLink className="w-3 h-3" /> Detail
+          </span>
+        )}
+
+        {/* LAYER 3: Konten */}
         <div className="absolute inset-x-0 bottom-0 z-20 p-6 lg:p-8 flex flex-col justify-end">
           <span className="text-primary-400 text-sm font-medium mb-2 tracking-wide uppercase">
             {project.category}
@@ -57,7 +72,11 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
               whileHover={{ scale: 1.1 }}
               className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0"
             >
-              <ArrowUpRight className="w-5 h-5 text-white" />
+              {hasExternal ? (
+                <ExternalLink className="w-5 h-5 text-white" />
+              ) : (
+                <ArrowUpRight className="w-5 h-5 text-white" />
+              )}
             </motion.div>
           </div>
 
@@ -76,6 +95,6 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           )}
         </div>
       </motion.div>
-    </Link>
+    </Wrapper>
   );
 }
