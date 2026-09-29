@@ -104,8 +104,8 @@ export default function Hero() {
                 <p className="text-sm text-gray-600 dark:text-gray-400">Total Engagement</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary-600">14</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Tim Dibimbing</p>
+                <p className="text-3xl font-bold text-primary-600">10000+</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Proyek Selesai</p>
               </div>
             </motion.div>
           </motion.div>
