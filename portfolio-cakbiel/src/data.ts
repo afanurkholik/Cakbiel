@@ -9,6 +9,7 @@ export interface Project {
   metrics?: { label: string; value: string }[];
   achievements?: string[];
   image: string;
+  externalLink?: string;
   slug: string;
 }
 
@@ -63,11 +64,12 @@ export interface SkillCategory {
   strategy: string[];
   soft: string[];
 }
+
 export const profile = {
   name: "Rahmad Maulada Nabila",
   nickname: "Cak Biel",
   role: "Desainer Grafis | Koordinator Multimedia | Mentor",
-  location: "Mertoyudan, Magelang, Jawa Tengah",
+  location: "Banguntapan, Bantul, DI Yogyakarta",
   email: "rahmadnabil2705@gmail.com",
   phone: "+62 858 7018 1547",
   linkedin: "https://linkedin.com/in/rahmadnabiel",
@@ -75,7 +77,7 @@ export const profile = {
   notionPortfolio: "https://cak-biel.notion.site/Cak-Biel-Portfolio-1b3634f3c4418059bd24ff658feb4847",
   bookletPort: "https://drive.usercontent.google.com/download?id=143FhYTwBzmodZOTYiU10f9GN3vRj4Gzj&export=download&authuser=1&confirm=t&uuid=d9303041-8fad-45a4-a6a4-57c8f1485471&at=AMrWOn16ckjYNJAj4SkoXevmICrh:1790661186335",
   tagline: "Mengembangkan Produk Digital Kreatif & Solutif",
-  summary: "Desainer Grafis berpengalaman 3 tahun sebagai Koordinator Staf Multimedia, Guru Multimedia, dan Supervisor Tim Kompetisi Riset Pelajar. Memiliki visi untuk fokus memberikan jasa yang berdampak pada pengembangan produk digital kreatif dan solutif."
+  summary: "Desainer Grafis berpengalaman 4 tahun dalam industri branding, desain produk, & mentoring. Spesialis manajemen proyek yang rapi, adaptif, kreatif dan solutif."
 };
 
 export const projects = [
@@ -94,20 +96,20 @@ export const projects = [
     slug: "branding-ma-darul-quran"
   },
   {
-  title: "Multimedia Learning Group",
-  category: "Education & Mentoring",
-  description: "Saya merancang program pembelajaran kelas dengan lingkungan belajar yang kolaboratif dan interaktif, di mana para siswa dapat secara aktif mengembangkan kreativitas, keterampilan komunikasi, dan kompetensi digital mereka melalui pengalaman praktis.",
-  year: "2022-2025",
-  role: "Guru Multimedia",
-  tools: ["Adobe Premiere Pro", "Capcut", "Figma", "Mentoring"],
-  metrics: [
-    { label: "Siswa Dibimbing", value: "100+" },
-    { label: "Kelas", value: "10+ Kelas" }
-  ],
-  image: "/assets/images/projects/multimedia-class.jpg",
-  externalLink: "https://app.notion.com/p/cak-biel/GROUP-LEARNING-35e634f3c441811ab817c1fb63b48af7?source=copy_link",
-  slug: "multimedia-learning-group"
-},
+    title: "Multimedia Learning Group",
+    category: "Education & Mentoring",
+    description: "Saya merancang program pembelajaran kelas dengan lingkungan belajar yang kolaboratif dan interaktif, di mana para siswa dapat secara aktif mengembangkan kreativitas, keterampilan komunikasi, dan kompetensi digital mereka melalui pengalaman praktis.",
+    year: "2022-2025",
+    role: "Guru Multimedia",
+    tools: ["Adobe Premiere Pro", "Capcut", "Figma", "Mentoring"],
+    metrics: [
+      { label: "Siswa Dibimbing", value: "100+" },
+      { label: "Kelas", value: "10+ Kelas" }
+    ],
+    image: "/assets/images/projects/multimedia-class.jpg",
+    externalLink: "https://app.notion.com/p/cak-biel/GROUP-LEARNING-35e634f3c441811ab817c1fb63b48af7?source=copy_link",
+    slug: "multimedia-learning-group"
+  },
   {
     title: "Supervisi Kompetisi Riset Pelajar",
     category: "Competition & Research",
@@ -129,7 +131,7 @@ export const projects = [
       "ISIF 2024 - Silver"
     ],
     image: "/assets/images/projects/competition-supervision.jpg",
-      externalLink: "https://app.notion.com/p/cak-biel/Micro-Teaching-35e634f3c44181b3a3dbfd695b88e7a2?source=copy_link",   // ← BARIS BARU INI
+    externalLink: "https://app.notion.com/p/cak-biel/Micro-Teaching-35e634f3c44181b3a3dbfd695b88e7a2?source=copy_link",
     slug: "supervisi-kompetisi"
   },
   {
@@ -143,7 +145,6 @@ export const projects = [
       { label: "Project Dikelola", value: "10,000+" }
     ],
     image: "/assets/images/projects/islamic-products.jpg",
-    externalLink: "https://cak-biel.notion.site/MARKETPLACE-MANAGEMENT-3ea634f3c441803db9c1c671af2be875?pvs=74",   // ← BARIS BARU INI
     slug: "desain-produk-islami"
   }
 ];
@@ -160,6 +161,17 @@ export const experience = [
       "Menerapkan inovasi efektifitas surat perintah kerja"
     ]
   },
+  {
+    title: "Mentor ICT",                                    // ← REVISI #10: BARU
+    company: "Creativemu ID",                               // ← REVISI #10: BARU
+    period: "Juni 2026 - September 2026",                   // ← REVISI #10: BARU
+    type: "Part-time",                                      // ← REVISI #10: BARU
+    description: "Memberikan Pelatihan ICT dan Konten Kreatif kepada peserta kursus dengan sistem jadwal yang terstruktur.",  // ← REVISI #10: BARU
+    achievements: [                                         // ← REVISI #10: BARU
+      "Melatih peserta kursus ICT & konten kreatif",        // ← REVISI #10: BARU
+      "Menyusun sistem jadwal pelatihan terstruktur"         // ← REVISI #10: BARU
+    ]                                                       // ← REVISI #10: BARU
+  },                                                        // ← REVISI #10: BARU
   {
     title: "Koordinator Staf Multimedia & Spesialis Media Sosial",
     company: "MA Darul Quran Wahid Hasyim Yogyakarta",
@@ -200,7 +212,7 @@ export const skills = {
     "Desain Grafis (CorelDraw, Canva, Adobe Photoshop)",
     "UI/UX Design (Figma)",
     "Video Editing (Adobe Premiere Pro, Capcut)",
-    "AI Design Tools (Dreamina AI)"
+    "AI Design Tools (Dreamina AI, Google Flow, Google Labs, Claude)"   // ← REVISI #12: TAMBAH TOOLS
   ],
   technical: [
     "Social Media Management",
@@ -228,13 +240,8 @@ export const education = [
     degree: "Sistem Informasi",
     period: "2024 - Sekarang",
     details: "Telah menyelesaikan 51 sks utama dan lanjutan, IPK: 3.69"
-  },
-  {
-    institution: "Universitas Pembangunan Nasional Veteran Yogyakarta",
-    degree: "Sistem Informasi",
-    period: "2021 - 2024",
-    details: "Telah menyelesaikan 57 sks utama"
   }
+  // ← REVISI #11: UPN Veteran Yogyakarta DIHAPUS
 ];
 
 export const certifications = [
