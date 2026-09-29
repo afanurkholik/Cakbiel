@@ -129,6 +129,7 @@ export const projects = [
       "ISIF 2024 - Silver"
     ],
     image: "/assets/images/projects/competition-supervision.jpg",
+      externalLink: "https://app.notion.com/p/cak-biel/Micro-Teaching-35e634f3c44181b3a3dbfd695b88e7a2?source=copy_link",   // ← BARIS BARU INI
     slug: "supervisi-kompetisi"
   },
   {
