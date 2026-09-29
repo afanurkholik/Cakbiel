@@ -69,7 +69,7 @@ export const profile = {
   name: "Rahmad Maulada Nabila",
   nickname: "Cak Biel",
   role: "Desainer Grafis | Koordinator Multimedia | Mentor",
-  location: "Banguntapan, Bantul, DI Yogyakarta",
+  location: "Mertoyudan, Magelang, Jawa Tengah",
   email: "rahmadnabil2705@gmail.com",
   phone: "+62 858 7018 1547",
   linkedin: "https://linkedin.com/in/rahmadnabiel",
