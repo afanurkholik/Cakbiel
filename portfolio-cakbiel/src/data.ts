@@ -93,6 +93,7 @@ export const projects = [
       { label: "Total Engagement", value: "200K+" }
     ],
     image: "/assets/images/projects/branding-madarsa.jpg",
+    externalLink: "https://app.notion.com/p/cak-biel/SOCIAL-MEDIA-3ea634f3c441804f9c3eef8a98b6fe54",
     slug: "branding-ma-darul-quran"
   },
   {
@@ -135,7 +136,7 @@ export const projects = [
     slug: "supervisi-kompetisi"
   },
   {
-    title: "Desain Produk Islami Grafisindo",
+    title: "Marketplace Management Grafisindo",
     category: "Graphic Design & Production",
     description: "Mengelola pesanan pelanggan (online dan offline), menerbitkan surat perintah kerja produksi, serta mendesain cover, layout, dan souvenir Islami. Membuat mockup dan dummy, serta berkoordinasi dengan tim produksi untuk memastikan kualitas tinggi pada mushaf Al-Qur'an, buku Yasin, dan souvenir.",
     year: "2025-2026",
@@ -145,6 +146,7 @@ export const projects = [
       { label: "Project Dikelola", value: "10,000+" }
     ],
     image: "/assets/images/projects/islamic-products.jpg",
+    externalLink: "https://cak-biel.notion.site/MARKETPLACE-MANAGEMENT-3ea634f3c441803db9c1c671af2be875?pvs=74",
     slug: "desain-produk-islami"
   }
 ];
