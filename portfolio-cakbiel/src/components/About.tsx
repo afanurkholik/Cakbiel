@@ -50,21 +50,16 @@ export default function About() {
           >
             <h2 className="text-sm font-medium text-primary-600 mb-2">TENTANG SAYA</h2>
             <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6">
-              Kreatif oleh Nature.<br />
-              <span className="gradient-text">Teknis oleh Pengalaman.</span>
+              Setiap Ide Layak Tampil .<br />
+              <span className="gradient-text">Dengan Cara Terbaiknya.</span>
             </h3>
 
             <div className="space-y-4 text-gray-600 dark:text-gray-400 mb-8">
               <p>
-                Saya Rahmad Maulada Nabila, seorang desainer grafis dan koordinator multimedia 
-                dengan passion dalam mengembangkan produk digital yang kreatif dan solutif. 
-                Dengan pengalaman 3+ tahun di bidang multimedia, saya telah membimbing berbagai 
-                tim untuk meraih prestasi di kompetisi nasional dan internasional.
+Saya Rahmad Maulada Nabila, Desainer Grafis berpengalaman 4 tahun sebagai Desainer Produk, Spesialis Sosial Media, Admin Marketplace, dan Mentor Tim Kompetisi Riset Pelajar. Menempuh Pendidikan Sarjana Sistem Informasi. 
               </p>
               <p>
-                Saat ini saya menempuh pendidikan Sarjana Sistem Informasi di Universitas Terbuka 
-                dengan IPK 3.69. Saya percaya pada pendekatan yang menggabungkan kreativitas 
-                desain dengan strategi teknologi untuk menghasilkan solusi yang berdampak.
+                Memiliki visi untuk fokus memberikan jasa yang berdampak pada pengembangan produk digital kreatif dan solutif bagi perusahaan. Saya memiliki kemampuan manajemen proyek desain yang rapi, adaptif dalam menghadapi berbagai tipe customer offline maupun online, dan solutif dalam menghadapi study case dalam tim.
               </p>
             </div>
 
