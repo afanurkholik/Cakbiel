@@ -61,7 +61,16 @@ export default function Contact() {
             <div className="bg-white dark:bg-dark-900 rounded-xl p-6">
               <Mail className="w-6 h-6 text-primary-600 mb-3" />
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Email</p>
-              <a href={`mailto:${profile.email}`} className="font-medium hover:text-primary-600 transition-colors">
+              {/* CTA EMAIL — dengan Subject & Body Template */}
+<a
+  href={`mailto:${profile.email}?subject=${encodeURIComponent("Peluang Kolaborasi / Rekrutmen – [Nama Perusahaan]")}&body=${encodeURIComponent(`Halo Kak Rahmad,\n\nSaya tertarik dengan profil Anda di cakbiel.netlify.app.\n\nSaya ingin mendiskusikan peluang:\n- Posisi: [sebutkan]\n- Company: [sebutkan]\n- Timeline: [sebutkan]\n\nMohon info ketersediaan dan rate card bila relevan.\n\nTerima kasih!`)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-all hover:scale-105 shadow-lg shadow-primary-600/20"
+>
+  <Mail className="w-5 h-5" />
+  Email Saya
+</a>
                 {profile.email}
               </a>
             </div>
