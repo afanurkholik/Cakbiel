@@ -63,25 +63,6 @@ Saya Rahmad Maulada Nabila, Desainer Grafis berpengalaman 4 tahun sebagai Desain
               </p>
             </div>
 
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-6 mb-8">
-              <div className="border-l-2 border-primary-600 pl-4">
-                <GraduationCap className="w-6 h-6 text-primary-600 mb-2" />
-                <p className="text-2xl font-bold">51</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">SKS Selesai</p>
-              </div>
-              <div className="border-l-2 border-primary-600 pl-4">
-                <Briefcase className="w-6 h-6 text-primary-600 mb-2" />
-                <p className="text-2xl font-bold">4</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Pengalaman Kerja</p>
-              </div>
-              <div className="border-l-2 border-primary-600 pl-4">
-                <Trophy className="w-6 h-6 text-primary-600 mb-2" />
-                <p className="text-2xl font-bold">14</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Medali</p>
-              </div>
-            </div>
-
             <a
               href="/cv"
               className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium transition-colors"
