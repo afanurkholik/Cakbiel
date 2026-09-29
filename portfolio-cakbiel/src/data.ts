@@ -73,6 +73,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/rahmadnabiel",
   website: "https://cutt.ly/cakbiel-port",
   notionPortfolio: "https://cak-biel.notion.site/Cak-Biel-Portfolio-1b3634f3c4418059bd24ff658feb4847",
+  bookletPort: "https://drive.usercontent.google.com/download?id=143FhYTwBzmodZOTYiU10f9GN3vRj4Gzj&export=download&authuser=1&confirm=t&uuid=d9303041-8fad-45a4-a6a4-57c8f1485471&at=AMrWOn16ckjYNJAj4SkoXevmICrh:1790661186335",
   tagline: "Mengembangkan Produk Digital Kreatif & Solutif",
   summary: "Desainer Grafis berpengalaman 3 tahun sebagai Koordinator Staf Multimedia, Guru Multimedia, dan Supervisor Tim Kompetisi Riset Pelajar. Memiliki visi untuk fokus memberikan jasa yang berdampak pada pengembangan produk digital kreatif dan solutif."
 };
