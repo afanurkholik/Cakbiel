@@ -94,19 +94,20 @@ export const projects = [
     slug: "branding-ma-darul-quran"
   },
   {
-    title: "Program Ekstrakurikuler Multimedia",
-    category: "Education & Mentoring",
-    description: "Membangun program kegiatan mingguan ekstrakurikuler Multimedia dengan dua jurusan, yakni kursus 'Graphic Design' dan 'Videography'. Membangun dan memelihara lingkungan pembelajaran multimedia praktis dengan rules, rutinitas, dan etika perilaku yang jelas.",
-    year: "2022-2025",
-    role: "Guru Multimedia",
-    tools: ["Adobe Premiere Pro", "Capcut", "Figma", "Mentoring"],
-    metrics: [
-      { label: "Siswa Dibimbing", value: "100+" },
-      { label: "Program", value: "2 Jurusan" }
-    ],
-    image: "/assets/images/projects/multimedia-class.jpg",
-    slug: "program-multimedia"
-  },
+  title: "Multimedia Learning Group",
+  category: "Education & Mentoring",
+  description: "Saya merancang program pembelajaran kelas dengan lingkungan belajar yang kolaboratif dan interaktif, di mana para siswa dapat secara aktif mengembangkan kreativitas, keterampilan komunikasi, dan kompetensi digital mereka melalui pengalaman praktis.",
+  year: "2022-2025",
+  role: "Guru Multimedia",
+  tools: ["Adobe Premiere Pro", "Capcut", "Figma", "Mentoring"],
+  metrics: [
+    { label: "Siswa Dibimbing", value: "100+" },
+    { label: "Kelas", value: "10+ Kelas" }
+  ],
+  image: "/assets/images/projects/multimedia-class.jpg",
+  externalLink: "https://app.notion.com/p/cak-biel/GROUP-LEARNING-35e634f3c441811ab817c1fb63b48af7?source=copy_link",
+  slug: "multimedia-learning-group"
+},
   {
     title: "Supervisi Kompetisi Riset Pelajar",
     category: "Competition & Research",
