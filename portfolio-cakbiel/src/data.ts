@@ -162,17 +162,6 @@ export const experience = [
     ]
   },
   {
-    title: "Mentor ICT",                                    // ← REVISI #10: BARU
-    company: "Creativemu ID",                               // ← REVISI #10: BARU
-    period: "Juni 2026 - September 2026",                   // ← REVISI #10: BARU
-    type: "Part-time",                                      // ← REVISI #10: BARU
-    description: "Memberikan Pelatihan ICT dan Konten Kreatif kepada peserta kursus dengan sistem jadwal yang terstruktur.",  // ← REVISI #10: BARU
-    achievements: [                                         // ← REVISI #10: BARU
-      "Melatih peserta kursus ICT & konten kreatif",        // ← REVISI #10: BARU
-      "Menyusun sistem jadwal pelatihan terstruktur"         // ← REVISI #10: BARU
-    ]                                                       // ← REVISI #10: BARU
-  },                                                        // ← REVISI #10: BARU
-  {
     title: "Koordinator Staf Multimedia & Spesialis Media Sosial",
     company: "MA Darul Quran Wahid Hasyim Yogyakarta",
     period: "Maret 2023 - April 2025",
@@ -204,7 +193,18 @@ export const experience = [
       "Membangun program ekstrakurikuler Multimedia dengan 2 jurusan",
       "Kursus Graphic Design dan Videography"
     ]
-  }
+  },
+   {
+    title: "Mentor ICT",                                    // ← REVISI #10: BARU
+    company: "Creativemu ID",                               // ← REVISI #10: BARU
+    period: "Juni 2026 - September 2026",                   // ← REVISI #10: BARU
+    type: "Part-time",                                      // ← REVISI #10: BARU
+    description: "Memberikan Pelatihan ICT dan Konten Kreatif kepada peserta kursus dengan sistem jadwal yang terstruktur.",  // ← REVISI #10: BARU
+    achievements: [                                         // ← REVISI #10: BARU
+      "Melatih peserta kursus ICT & konten kreatif",        // ← REVISI #10: BARU
+      "Menyusun sistem jadwal pelatihan terstruktur"         // ← REVISI #10: BARU
+    ]                                                       // ← REVISI #10: BARU
+  },                                                        // ← REVISI #10: BARU
 ];
 
 export const skills = {
