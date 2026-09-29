@@ -143,6 +143,7 @@ export const projects = [
       { label: "Project Dikelola", value: "10,000+" }
     ],
     image: "/assets/images/projects/islamic-products.jpg",
+    externalLink: "https://cak-biel.notion.site/MARKETPLACE-MANAGEMENT-3ea634f3c441803db9c1c671af2be875?pvs=74",   // ← BARIS BARU INI
     slug: "desain-produk-islami"
   }
 ];
