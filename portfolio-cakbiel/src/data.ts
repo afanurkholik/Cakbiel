@@ -77,7 +77,7 @@ export const profile = {
   notionPortfolio: "https://cak-biel.notion.site/Cak-Biel-Portfolio-1b3634f3c4418059bd24ff658feb4847",
   bookletPort: "https://drive.usercontent.google.com/download?id=143FhYTwBzmodZOTYiU10f9GN3vRj4Gzj&export=download&authuser=1&confirm=t&uuid=d9303041-8fad-45a4-a6a4-57c8f1485471&at=AMrWOn16ckjYNJAj4SkoXevmICrh:1790661186335",
   tagline: "Mengembangkan Produk Digital Kreatif & Solutif",
-  summary: "Desainer Grafis berpengalaman 4 tahun dalam industri branding, desain produk, & mentoring. Spesialis manajemen proyek yang rapi, adaptif, kreatif dan solutif."
+  summary: "Desainer Grafis berpengalaman 4 tahun sebagai Desainer Produk, Spesialis Sosial Media, Admin Marketplace, dan Mentor Tim Kompetisi Riset Pelajar. Menempuh Pendidikan Sarjana Sistem Informasi."
 };
 
 export const projects = [
