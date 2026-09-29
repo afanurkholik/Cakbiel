@@ -251,7 +251,7 @@ export const awards = [
   {
     title: "World Invention Competition and Exhibition (WICE) 2024",
     medal: "Gold",
-    location: "UNIVERSITAS MAHSA - Selangor Indonesia",
+    location: "UNIVERSITAS MAHSA - Selangor Malaysia",
     date: "September 2025",
     role: "Supervisor"
   },
